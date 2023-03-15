@@ -1,0 +1,2 @@
+pip install indic-nlp-library
+pip install torchtext
