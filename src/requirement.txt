@@ -1,2 +1,5 @@
 pip install indic-nlp-library
 pip install torchtext
+pip install evaluate
+pip install klib  
+pip install rouge_score 
