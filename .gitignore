@@ -135,3 +135,9 @@ models/
 # data
 data/
 !/data/**/*.gitkeep
+
+temp/mt5-codemixed
+temp/mt5
+temp/mt5v1
+temp/logs
+

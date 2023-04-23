@@ -72,8 +72,8 @@ tokenizer.add_special_tokens({'additional_special_tokens': ['<unk>']})
 
 maxlen = 512
 def tokenize_df(df):
-    input = tokenizer(df['sentence'], padding='max_length', truncation=True, return_tensors="pt", max_length=maxlen)
-    target = tokenizer(df['english_translation'], padding='max_length', truncation=True, return_tensors="pt", max_length=maxlen)
+    target = tokenizer(df['sentence'], padding='max_length', truncation=True, return_tensors="pt", max_length=maxlen)
+    input = tokenizer(df['english_translation'], padding='max_length', truncation=True, return_tensors="pt", max_length=maxlen)
     input_ids = input['input_ids']
     attention_mask = input['attention_mask']
     target_ids = target['input_ids']
@@ -161,16 +161,16 @@ from nltk.tokenize import RegexpTokenizer
 rouge_metric = evaluate.load("rouge")
 
 def tokenize_sentence(arg):
-    encoded_arg = MT5Tokenizer(arg)
-    return MT5Tokenizer.convert_ids_to_tokens(encoded_arg.input_ids)
+    encoded_arg = tokenizer(arg)
+    return tokenizer.convert_ids_to_tokens(encoded_arg.input_ids)
 
 def metrics_func(eval_arg):
     preds, labels = eval_arg
     # Replace -100
-    labels = np.where(labels != -100, labels, MT5Tokenizer.pad_token_id)
+    labels = np.where(labels != -100, labels,tokenizer.pad_token_id)
     # Convert id tokens to text
-    text_preds = MT5Tokenizer.batch_decode(preds, skip_special_tokens=True)
-    text_labels = MT5Tokenizer.batch_decode(labels, skip_special_tokens=True)
+    text_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+    text_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
     # Insert a line break (\n) in each sentence for ROUGE scoring
     # (Note : Please change this code, when you perform on other languages except for Japanese)
     text_preds = [(p if p.endswith(("!", "！", "?", "？", "。")) else p + "。") for p in text_preds]
@@ -194,7 +194,7 @@ model.resize_token_embeddings(len(tokenizer))
 
 
 training_args = Seq2SeqTrainingArguments(
-  output_dir = "mt5-codemixed",
+  output_dir = "mt5-codemixedv1",
   log_level = "error",
   num_train_epochs = 10,
   learning_rate = 5e-4,
@@ -230,6 +230,6 @@ trainer = Seq2SeqTrainer(
 trainer.train()
 
 #save model
-trainer.save_model("./mt5")
+trainer.save_model("./mt5v1")
 
 
