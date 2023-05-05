@@ -1,0 +1,42 @@
+mt5_with_real_data
+rouge: 0.4726866274301919
+rouge2: 0.2994507372219834
+rougeL: 0.45372134377127304
+rougeLsum: 0.45586352730484303
+bleu: 15.68555503123801
+***** Input's Text *****
+@rynkee it is thi thought which we want to change. @PunsTurnMeOn
+***** codemix (True Value) *****
+@rynkee yehi soch to badalni hai @PunsTurnMeOn
+***** codemix (Generated Text) *****
+@rynkees it is thi thought which we want to change.@PunsTurnMeOn
+***** Input's Text *****
+@hurdangi haan.. @sagarikaghose sister will eat green mango today @the_hindu
+***** codemix (True Value) *****
+@hurdangi haan.. @sagarikaghose Didi aaj hare rang ke aam khaengi @the_hindu
+***** codemix (Generated Text) *****
+@hurdangi haan.@sagarikaghose bhai green mango peene ke saath kharab kar jaao #the_hindu
+***** Input's Text *****
+wait brother, do not cry this much, its #GST not a bomb. have some shame. @digvijaya_28 @INCIndia " country brought it out "now you sit and cry
+***** codemix (True Value) *****
+Are bas kar bhai itna nahi rone "ka #GST hai bomb nahi. Kuch to sharm karo. @digvijaya_28 @INCIndia " desh nikal liya "aage u sit and cry
+***** codemix (Generated Text) *****
+wait bhai, do not cry this much #GST nahi bomb. Haan kuch ho chuka hai @digvijaya_28@INCIndia " country brought it out"
+***** Input's Text *****
+@rynkee it is thi thought which we want to change. @PunsTurnMeOn
+***** codemix (True Value) *****
+@rynkee yehi soch to badalni hai @PunsTurnMeOn
+***** codemix (Generated Text) *****
+@rynkees it is thi thought which we want to change.@PunsTurnMeOn
+***** Input's Text *****
+#RightToPrivacy under this act, is it possible to have urinals in open space
+***** codemix (True Value) *****
+#RightToPrivacy ke andar ab khule me susu allow hai kya?
+***** codemix (Generated Text) *****
+#RightToPrivacy under this act is it possible to have urinals in open space
+***** Input's Text *****
+@FreeCharge recharge too.. fun too#MyCaptionForFreeCharge
+***** codemix (True Value) *****
+@FreeCharge recharge bhi.. Maze bhi #MyCaptionForFreeCharge
+***** codemix (Generated Text) *****
+@FreeCharge recharge bhi kar rahe hai

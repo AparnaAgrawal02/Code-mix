@@ -1,0 +1,42 @@
+mbert_with_real_data
+rouge: 0.280372851043670509
+rouge2: 0.110008486010881143
+rougeL: 0.26227327978565021
+rougeLsum: 0.26261981319473463
+bleu: 4.10605337452831644
+***** Input's Text *****
+@rynkee it is thi thought which we want to change. @PunsTurnMeOn
+***** codemix (True Value) *****
+@rynkee yehi soch to badalni hai @PunsTurnMeOn
+***** codemix (Generated Text) *****
+nirdeshikA it is thi thought hamane want to change hai Puns TurnMeOn
+***** Input's Text *****
+@hurdangi haan.. @sagarikaghose sister will eat green mango today @the_hindu
+***** codemix (True Value) *****
+@hurdangi haan.. @sagarikaghose Didi aaj hare rang ke aam khaengi @the_hindu
+***** codemix (Generated Text) *****
+agararikaghose bhU.Nge will eat green mAta Aja the_hindu
+***** Input's Text *****
+wait brother, do not cry this much, its #GST not a bomb. have some shame. @digvijaya_28 @INCIndia " country brought it out "now you sit and cry
+***** codemix (True Value) *****
+Are bas kar bhai itna nahi rone "ka #GST hai bomb nahi. Kuch to sharm karo. @digvijaya_28 @INCIndia " desh nikal liya "aage u sit and cry
+***** codemix (Generated Text) *****
+wait brother do not cry this much its kitAba. have some paravaradigvijaya_ 28 '' country brought it out `` now you sit aura chAhate
+***** Input's Text *****
+@rynkee it is thi thought which we want to change. @PunsTurnMeOn
+***** codemix (True Value) *****
+@rynkee yehi soch to badalni hai @PunsTurnMeOn
+***** codemix (Generated Text) *****
+nirdeshikA it is thi thought hamane want to change hai Puns TurnMeOn
+***** Input's Text *****
+#RightToPrivacy under this act, is it possible to have urinals in open space
+***** codemix (True Value) *****
+#RightToPrivacy ke andar ab khule me susu allow hai kya?
+***** codemix (Generated Text) *****
+`` RightTo Privacy under this act is it possible to have urinals in open space
+***** Input's Text *****
+@FreeCharge recharge too.. fun too#MyCaptionForFreeCharge
+***** codemix (True Value) *****
+@FreeCharge recharge bhi.. Maze bhi #MyCaptionForFreeCharge
+***** codemix (Generated Text) *****
+None. fun too MyCaptionForFreeCharge

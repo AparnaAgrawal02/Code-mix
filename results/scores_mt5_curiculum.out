@@ -1,0 +1,42 @@
+basecase_mt5
+rouge: 0.49820429673769623
+rouge2: 0.3154507245295545
+rougeL: 0.4746749449453247
+rougeLsum: 0.47645742965365107
+bleu: 17.430399690734713
+***** Input's Text *****
+@rynkee it is thi thought which we want to change. @PunsTurnMeOn
+***** codemix (True Value) *****
+@rynkee yehi soch to badalni hai @PunsTurnMeOn
+***** codemix (Generated Text) *****
+@rynkees it is thi thought which we want to change.@PunsTurnMeOn
+***** Input's Text *****
+@hurdangi haan.. @sagarikaghose sister will eat green mango today @the_hindu
+***** codemix (True Value) *****
+@hurdangi haan.. @sagarikaghose Didi aaj hare rang ke aam khaengi @the_hindu
+***** codemix (Generated Text) *****
+@hurdangi haan.@sagarikaghose behen aaj green mango pee jaate hai #the_hindu
+***** Input's Text *****
+wait brother, do not cry this much, its #GST not a bomb. have some shame. @digvijaya_28 @INCIndia " country brought it out "now you sit and cry
+***** codemix (True Value) *****
+Are bas kar bhai itna nahi rone "ka #GST hai bomb nahi. Kuch to sharm karo. @digvijaya_28 @INCIndia " desh nikal liya "aage u sit and cry
+***** codemix (Generated Text) *****
+wait bhai, ye baat mat karoge #GST koi bomb nahi hai. Kuch shakal @digvijaya_28@INCIndia " country brought it out"
+***** Input's Text *****
+@rynkee it is thi thought which we want to change. @PunsTurnMeOn
+***** codemix (True Value) *****
+@rynkee yehi soch to badalni hai @PunsTurnMeOn
+***** codemix (Generated Text) *****
+@rynkees it is thi thought which we want to change.@PunsTurnMeOn
+***** Input's Text *****
+#RightToPrivacy under this act, is it possible to have urinals in open space
+***** codemix (True Value) *****
+#RightToPrivacy ke andar ab khule me susu allow hai kya?
+***** codemix (Generated Text) *****
+#RightToPrivacy is act, open space mein urinals hota hai
+***** Input's Text *****
+@FreeCharge recharge too.. fun too#MyCaptionForFreeCharge
+***** codemix (True Value) *****
+@FreeCharge recharge bhi.. Maze bhi #MyCaptionForFreeCharge
+***** codemix (Generated Text) *****
+@FreeCharge bhi recharge kar rahe hai. Aa gaye #MyCaptionForfreeCharger
