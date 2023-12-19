@@ -1,9 +1,49 @@
 # Code-mix
+## Abstract
+ Text generation is a highly active area of research in the computational linguistic
+ community.Code-mixing, the phenomenon of mixing two or more languages in a single
+ utterance, is a common occurrence in multilingual communities worldwide. With the
+ growing interest in developing natural language processing systems that can handle
+ code-mixed text, recent research has focused on generating code-mixed text using neu-
+ ral models. However, generating high-quality code-mixed text is a challenging task due
+ to the complex nature of language mixing.
+ In this study, we explore the use of curriculum training to fine-tune multilingual
+ Transformers like mT5 and mBert. We also use a dependency-free strategy for pro-
+ ducing code-mixed texts from bilingual distributed representations that we utilize for
+ enhancing language model performance due to the dearth of training data for code-
+ mixing. We apply a curriculum learning strategy, in particular, where we first train
+ the language models on synthetic data, then on gold code-mixed data as suggested by
+ the paper https://arxiv.org/pdf/2105.08807.pdf
+## Keywords: CodeMix, multilingual, fine-tuning, synthetic ,Real,Transformers
+
+## Qualitative Analysis
+ • Example of nearest neighbours:
+ – aur, and: similarity=0.9570194482803345
+ – of, ki: similarity=0.7434549927711487
+ • Eample of synthetic sentence:
+ • en: ”Okay just calm down, we’ll get to the bottom of this.”,
+ cm: ”Okay just shAMta ho ham ’ll get to the bottom of this.
+
+##  Sample
+ – Input’s Text
+ @hurdangi haan.. @sagarikaghose sister will eat green mango today @the hindu
+ – codemix (True Value)
+ @hurdangi haan.. @sagarikaghose Didi aaj hare rang ke aam khaengi @the hindu
+ – mt5 on PHNC dataset
+ @hurdangi haan.@sagarikaghose bhai green mango peene ke saath kharab
+ kar jaao the hindu
+ – mt5 on synthetic data
+ agararikaghose bhU.Nge will eat green mAta Aja the hindu
+ – mt5(curriculum training)
+ @hurdangi haan.@sagarikaghose behen aaj hare mango pee jaate hai the hindu
+ we can clearly see the improvement in curriculum trainin
+
+
  ## How to run?
- python mt5_inference.py --model "checkpoint" --text  
- Sample  
- python mt5_inference.py --model ../../../nlp_project_models/mt5/mt5_curriculum --text "do not cry   this much  ,i am your sister"  
-*** Input's Text ***  
-do not cry this much  ,i am your sister  
-*** codemix (Generated Text) ***  
-aisa nahi aaya, i am ur behen  
+  python mt5_inference.py --model "checkpoint" --text  
+  Sample  
+  python mt5_inference.py --model ../../../nlp_project_models/mt5/mt5_curriculum --text "do not cry   this much  ,i am your sister"  
+ *** Input's Text ***  
+ do not cry this much  ,i am your sister  
+ *** codemix (Generated Text) ***  
+ aisa nahi aaya, i am ur behen  
