@@ -18,32 +18,27 @@
  CodeMix, multilingual, fine-tuning, synthetic ,Real,Transformers
 
 ## Qualitative Analysis
- • Example of nearest neighbours:
- – aur, and: similarity=0.9570194482803345
- – of, ki: similarity=0.7434549927711487
- • Eample of synthetic sentence:
- • en: ”Okay just calm down, we’ll get to the bottom of this.”,
- cm: ”Okay just shAMta ho ham ’ll get to the bottom of this.
+ ### Example of nearest neighbours:  
+ – aur, and: similarity=0.9570194482803345  
+ – of, ki: similarity=0.7434549927711487   
+ ### Eample of synthetic sentence:  
+ • en: ”Okay just calm down, we’ll get to the bottom of this.”,  
+ cm: ”Okay just shAMta ho ham ’ll get to the bottom of this.  
 
 ##  Sample
- – Input’s Text  
+ ### Input’s Text  
     sister will eat green mango today   
- – codemix (True Value)  
+ ### codemix (True Value)  
     Didi aaj hare rang ke aam khaengi  
- – mt5 on PHNC dataset  
+ ### mt5 on PHNC dataset  
     bhai green mango peene ke saath kharab  
- – mt5 on synthetic data  
-   agararikaghose bhU.Nge will eat green mAta Aja the hindu   
- – mt5(curriculum training)  
-   behen aaj hare mango pee jaate hai the hindu  
+ ### mt5 on synthetic data  
+    agararikaghose bhU.Nge will eat green mAta Aja the hindu   
+ ### mt5(curriculum training)  
+    behen aaj hare mango pee jaate hai the hindu  
  we can clearly see the improvement in curriculum training
 
 
  ## How to run?
   python mt5_inference.py --model "checkpoint" --text  
-  Sample  
-  python mt5_inference.py --model ../../../nlp_project_models/mt5/mt5_curriculum --text "do not cry   this much  ,i am your sister"  
- *** Input's Text ***  
- do not cry this much  ,i am your sister  
- *** codemix (Generated Text) ***  
- aisa nahi aaya, i am ur behen  
+
