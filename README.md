@@ -14,7 +14,8 @@
  mixing. We apply a curriculum learning strategy, in particular, where we first train
  the language models on synthetic data, then on gold code-mixed data as suggested by
  the paper https://arxiv.org/pdf/2105.08807.pdf
-## Keywords: CodeMix, multilingual, fine-tuning, synthetic ,Real,Transformers
+## Keywords: 
+ CodeMix, multilingual, fine-tuning, synthetic ,Real,Transformers
 
 ## Qualitative Analysis
  • Example of nearest neighbours:
@@ -25,18 +26,17 @@
  cm: ”Okay just shAMta ho ham ’ll get to the bottom of this.
 
 ##  Sample
- – Input’s Text
- @hurdangi haan.. @sagarikaghose sister will eat green mango today @the hindu
- – codemix (True Value)
- @hurdangi haan.. @sagarikaghose Didi aaj hare rang ke aam khaengi @the hindu
- – mt5 on PHNC dataset
- @hurdangi haan.@sagarikaghose bhai green mango peene ke saath kharab
- kar jaao the hindu
- – mt5 on synthetic data
- agararikaghose bhU.Nge will eat green mAta Aja the hindu
- – mt5(curriculum training)
- @hurdangi haan.@sagarikaghose behen aaj hare mango pee jaate hai the hindu
- we can clearly see the improvement in curriculum trainin
+ – Input’s Text  
+    sister will eat green mango today   
+ – codemix (True Value)  
+    Didi aaj hare rang ke aam khaengi  
+ – mt5 on PHNC dataset  
+    bhai green mango peene ke saath kharab  
+ – mt5 on synthetic data  
+   agararikaghose bhU.Nge will eat green mAta Aja the hindu   
+ – mt5(curriculum training)  
+   behen aaj hare mango pee jaate hai the hindu  
+ we can clearly see the improvement in curriculum training
 
 
  ## How to run?
